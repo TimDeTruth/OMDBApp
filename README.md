@@ -5,6 +5,7 @@ Timmy Lau
 
 ## Prerequisite 
 1. Create a free OMDB API key from http://www.omdbapi.com/apikey.aspx
+2. Have an Android/IOS emulator installed
 
 ## Installing
 Using npm: 
