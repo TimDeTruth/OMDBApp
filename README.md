@@ -16,6 +16,10 @@ Create a .env file at project root level
 - EXPO_PUBLIC_API_KEY= YOUR_API_KEY
 npm install
 npm start
+Select "a" to open Android emulator
 ```
+
+## Result:
+![image](https://github.com/TimDeTruth/OMDBApp/assets/64127471/42c1ae76-8ef7-4bdf-9798-248053382d2d)
 
 
