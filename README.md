@@ -4,8 +4,7 @@ An app that can search OMDB for movies
 Timmy Lau 
 
 ## Prerequisite 
-1. Create a free OMDB API key
-Free API key: http://www.omdbapi.com/apikey.aspx
+1. Create a free OMDB API key from http://www.omdbapi.com/apikey.aspx
 
 ## Installing
 Using npm: 
