@@ -10,7 +10,7 @@ const SearchBar = () => {
   useEffect(() => {
     const search = async () => {
       const searchResults = await searchMovies(searchTerm);
-      setMovies(searchResults || []);
+      setMovies(searchResults);
     };
 
     //deal with whitespace
@@ -23,19 +23,20 @@ const SearchBar = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.searchContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Search for movies"
-          value={searchTerm}
-          onChangeText={setSearchTerm}
-        />
-      </View>
+      <TextInput
+        style={styles.input}
+        placeholder="Search for movies"
+        value={searchTerm}
+        onChangeText={setSearchTerm}
+        autoCapitalize="characters"
+        autoCorrect={true}
+      />
+
       <FlatList
         style={styles.movieList}
         data={movies}
-        renderItem={({ item }) => <MovieItem movie={item} />}
         keyExtractor={(item) => item.imdbID}
+        renderItem={({ item }) => <MovieItem movie={item} />}
       />
     </View>
   );
@@ -46,21 +47,19 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
   },
-  searchContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginBottom: 10,
-  },
+
   input: {
-    marginRight: 10,
+    width: "100%",
     padding: 8,
     borderWidth: 1,
-    borderRadius: 5,
+    borderRadius: 10,
     borderColor: "#ccc",
+    marginBottom: 8,
   },
 
   movieList: {
-    width: "175%",
+    width: 250,
+    marginBottom: 16,
   },
 });
 

@@ -6,6 +6,7 @@ const searchMovies = async (searchTerm) => {
       `http://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${searchTerm}`
     );
     const data = await response.json();
+    // console.log(data);
     if (response.ok) {
       return data.Search;
     } else {
@@ -17,8 +18,4 @@ const searchMovies = async (searchTerm) => {
   }
 };
 
-const getMoviePoster = (imdbID) => {
-  return `http://img.omdbapi.com/?apikey=${OMDB_API_KEY}&i=${imdbID}`;
-};
-
-export { searchMovies, getMoviePoster };
+export { searchMovies };
