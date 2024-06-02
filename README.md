@@ -20,6 +20,7 @@ Select "a" to open Android emulator
 ```
 
 ## Result:
-![image](https://github.com/TimDeTruth/OMDBApp/assets/64127471/42c1ae76-8ef7-4bdf-9798-248053382d2d)
+![image](https://github.com/TimDeTruth/OMDBApp/assets/64127471/1a183220-efdc-45fd-b528-0de72946d2c3)
+
 
 
