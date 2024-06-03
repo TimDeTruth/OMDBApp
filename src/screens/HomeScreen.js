@@ -5,7 +5,6 @@ import SearchBar from "../components/SearchBar";
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
 const HomeScreen = () => {
-  // console.log(SCREEN_WIDTH);
   return (
     <View>
       <Image

@@ -14,10 +14,10 @@
     "axios": "^1.7.2",
     "axios-rate-limit": "^1.4.0",
     "bottleneck": "^2.19.5",
-    "expo": "~50.0.17",
-    "expo-status-bar": "~1.11.1",
+    "expo": "^51.0.9",
+    "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.73.6",
+    "react-native": "0.74.1",
     "react-native-dotenv": "^3.4.11"
   },
   "devDependencies": {
